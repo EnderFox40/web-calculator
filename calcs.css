@@ -97,7 +97,7 @@ body {
     top: 10px;
     left: 10px;
     z-index: 9999; /* Опционално: за да гарантирате, че бутона е върху всичко друго */
-    background-image: url('images/theme.png'); /* Заменете 'път-към-вашия-файл.png' с пътя до вашия PNG файл */
+    background-image: url('theme.png'); /* Заменете 'път-към-вашия-файл.png' с пътя до вашия PNG файл */
     background-repeat: no-repeat;
     background-size: 20px 20px; /* Размер на иконата */
     background-position: 10px center; /* Отместване на иконата от левия край и центриране по вертикалата */
