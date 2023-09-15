@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.display {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    background-color: #e2e2e2;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.operator {
+    background-color: #ff9500;
+}
+
+.operator:hover {
+    background-color: #ff6a00;
+}
+
+:root {
+    --background-light: #f0f0f0;
+    --text-light: #000;
+    --background-dark: #333;
+    --text-dark: #fff;
+  }
+
+  body.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+
+/* Стилове за бутона Toggle Theme */
+/* Стилове за бутона Toggle Theme */
+.theme-toggle {
+    background-color: transparent;
+    border: 2px solid #d3d3d3;
+    border-radius: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Разстояние между иконата и текста */
+    font-size: 14px; /* По-малък размер на шрифта */
+    padding: 6px 10px; /* По-малки стойности за padding */
+    color: #000000;
+    transition: all 0.3s ease;
+    justify-content: center; /* Центриране по хоризонтала */
+    display: flex;
+    background-color: #d3d3d3;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999; /* Опционално: за да гарантирате, че бутона е върху всичко друго */
+    background-image: url('images/theme.png'); /* Заменете 'път-към-вашия-файл.png' с пътя до вашия PNG файл */
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* Размер на иконата */
+    background-position: 10px center; /* Отместване на иконата от левия край и центриране по вертикалата */
+    padding-left: 20px; /* Отместване на текста на бутона, за да остане място за иконата */
+  }
+  
+  
+
+
+  
+  .theme-icon {
+    width: 24px;
+    height: 24px;
+    fill: #333; /* Цвят на иконата */
+    transition: fill 0.3s ease; /* Плавна анимация при промяна на цвета на иконата */
+  }
+  
+  .theme-toggle.dark {
+    border-color: #d3d3d3; /* Цвят на границата в тъмната тема */
+    color: #fff; /* Цвят на текста в тъмната тема */
+  }
+  
+  
+  .theme-icon.dark {
+    fill: #fff; /* Цвят на иконата в тъмната тема */
+  }
+
+  .theme-toggle .theme-icon {
+    width: 18px; /* По-малък размер на иконата */
+    height: 18px; /* По-малък размер на иконата */
+    fill: #333;
+    transition: fill 0.3s ease;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .theme-toggle {
+      color: #fff; /* Шрифт бял в тъмна тема */
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Напълно прозрачен фон на хедъра */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+  
